@@ -1,0 +1,58 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {                     /* "обертка" часов */
+    background-color: rgb(87, 182, 79);
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 350px;
+    height: 160px;
+    position: relative;     /* Позиционирование определяет относительно чего, при смещении, будет позиционироваться элемент:
+                                относительно окна браузера, других элементов или текущего местоположения на веб-странице. */
+    margin: 0 auto;         /* Свойство margin определяет расстояние от внешнего края рамки текущего элемента до внутренней
+                границы родительского элемента или до внешнего края элемента, который расположен рядом с текущим элементом. */
+    margin-top: 20%;     /* отступ от верха, иначе элемент .clock-head прячется за страницу */
+}
+
+.clock-head {                   /* верхняя часть часов */
+    background-color: brown;
+    color: #a6ff3c;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-transform: uppercase;  /* позволяет весь текст сделать написанным заглавными буквами или строчными */
+    font-family: sans-serif;    /* позволяет указать шрифт текста, который будет использован внутри элемента*/
+    font-weight: bold;          /* позволяет указать, насколько жирным будут выглядеть текст*/
+    position: absolute;
+    left: 35%;                  /* смещение относительно верхнего левого угла часов .main*/
+    top: -18%;
+    padding: 10px 35px;          /* расширение элемента*/
+}
+
+.time {                     /* внутреняя часть часов */
+    background-color: rgb(240, 246, 255);
+    width: 300px;
+    height: 100px;
+    margin: 30px auto;      /* отступ сверху 30, по бокам посередине */
+    font-size: 41px;        /* позволяет увеличивать или уменьшать размер текста*/
+    font-family: 'Orbitron', sans-serif;
+    padding: 23px 15px;
+    border-radius: 15px;
+}
+
+
+@font-face {            /* стиль выведения времени */
+    font-family: 'Orbitron';
+    src: local('Orbitron Regular'), local('Orbitron-Regular'), url(https://fonts.gstatic.com/s/orbitron/v10/yMJRMIlzdpvBhQQL_Qq7dy0.woff2) format('woff2');
+}
+
+
+body {
+    color: #42ff49;
+     text-align: center;
+    font-family: sans-serif;
+}
