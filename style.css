@@ -1,5 +1,4 @@
 
-
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +44,7 @@
 }
 
 
-@font-face {            /* стиль выведения времени */
+@font-face {            /* стиль выведения времени, задает файл загружаемого шрифта для использования на Web-странице */
     font-family: 'Orbitron';
     src: local('Orbitron Regular'), local('Orbitron-Regular'), url(https://fonts.gstatic.com/s/orbitron/v10/yMJRMIlzdpvBhQQL_Qq7dy0.woff2) format('woff2');
 }
@@ -53,6 +52,15 @@
 
 body {
     color: #42ff49;
-     text-align: center;
+    text-align: center;
     font-family: sans-serif;
+    background-size: cover;
+    background-attachment: fixed
 }
+
+/*  в body
+      margin: 0;
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-position: top;
+ */
